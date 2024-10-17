@@ -17,5 +17,6 @@
   <modules>
     <module>auth-server</module>
     <module>java-format</module>
+    <module>collections-sort</module>
   </modules>
 </project>
