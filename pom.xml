@@ -19,5 +19,7 @@
     <module>java-format</module>
     <module>collections-sort</module>
     <module>java-examples</module>
+    <module>jackson-examples</module>
+    <module>spring-logback</module>
   </modules>
 </project>
