@@ -6,15 +6,7 @@ import java.util.Collections;
 /**
  * Created by jt, Spring Framework Guru.
  */
-public class CollectionSortCompare {
-
-    public static class CompareFirstName implements java.util.Comparator<Person> {
-        @Override
-        public int compare(Person o1, Person o2) {
-            return o1.getFirstName().compareTo(o2.getFirstName());
-        }
-    }
-
+public class CollectionSortLambda {
     public static void main( String[] args )
     {
         ArrayList<Person> list = new ArrayList<Person>();
@@ -26,7 +18,7 @@ public class CollectionSortCompare {
 
         System.out.printf("Before Sort : %s%n", list);
 
-        Collections.sort(list, new CompareFirstName());
+        Collections.sort(list, (p1, p2) -> p1.getLastName().compareTo(p2.getLastName()));
 
         System.out.printf("After Sort : %s%n", list);
     }

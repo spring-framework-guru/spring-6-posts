@@ -12,7 +12,7 @@ public class ArraySort {
 
     public static void main( String[] args )
     {
-        int length = 3000;
+        int length = 5000;
         int[] array = new int[length];
 
         Random random = new Random();
